@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "class": {
+      "type": "string",
+      "enum": [
+        "noise",
+        "reflex",
+        "escalate"
+      ]
+    },
+    "score": {
+      "type": "number"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "reflex_cmd": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "class",
+    "score",
+    "reason",
+    "reflex_cmd"
+  ],
+  "additionalProperties": false
+}
